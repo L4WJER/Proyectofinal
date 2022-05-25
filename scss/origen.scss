@@ -1,0 +1,79 @@
+/* ORIGEN SASS E IMPORTS*/
+@import "menu";
+@import "body";
+@import "footer";
+
+/*MAPS*/
+
+$headings:(
+  h1:4em,
+  h2:3em,
+  h3:2em,
+  h4:1em,
+  h5:0.5
+);
+
+$h1: map-get($headings, h1 );
+h1{
+  font-size: $h1;
+}
+
+/*variables*/
+$colormarca: white;
+
+
+    /*EXTENDS*/
+    
+
+    .disenoanuncio{
+      text-align: center;
+      font-size: large;
+      color: $colormarca;
+      
+      }
+
+      .disenoanuncio2{
+        @extend .disenoanuncio;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .fondosection{
+        background-color: black;
+        margin-top: -10px;
+        margin-bottom: -10px;
+      }
+
+      .fondosection2{
+        @extend .fondosection;
+        border-radius: 10px;
+      }
+
+      /*MIXINS*/
+
+      $largo:15px;
+      $ancho:15px;
+
+      @mixin largo-ancho ($largo, $ancho){
+        width: $largo;
+        height: $ancho;
+      }
+
+      .cajas{
+        @include largo-ancho(15px,15px)
+      }
+        
+      .cajas2{
+        @include largo-ancho(30px,30px)
+
+      }
+      .cajas3{
+        @include largo-ancho(45px,45px)
+      }
+
+      
+
+
+
+
+
+

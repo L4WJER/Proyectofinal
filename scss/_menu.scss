@@ -1,0 +1,148 @@
+/* ESTILOS MENU [Span]*/
+/*ANIDAMIENTO*/
+span {
+  background-color: burlywood;
+  color: black;
+  opacity: 0.7px;
+  width: 120px;
+  height: 30px;
+  margin-left: 5px;
+padding: 10px 25px;
+  list-style-type: none;
+  position: relative;
+  top: -25px;
+  right: -300px;
+margin-top: -10px;
+
+ &:hover{
+   background-color: red;
+ }
+}
+
+/* MENU CLASES*/
+.centrarh2{
+  text-align:center;
+  font-size: xx-large;
+  font-family: 'Abril Fatface', cursive;
+
+}
+.back{
+  background-image: url(../IMGENES/fondo\ \ de\ comida.png);
+}
+.centrar{
+padding: 50px;
+  text-align:center;
+  color: red;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+
+.sinsubrayar{
+  text-decoration:none ;
+  
+  
+  
+}
+
+.nav_responsive-ul{
+  display: none;
+}
+
+.nav{
+  
+  font-size: small;
+  margin-top: -13px;
+  margin-right: -8px;
+  margin-left: -8px;
+  text-align: left;
+}
+
+.nav_li{
+  display: inline-block;
+  padding: 7px;
+  color: white;
+}
+.nav_li:hover >a{
+  color: red;
+}
+.nav_li:hover {
+  color: blanchedalmond;
+}
+
+.nav_li a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_li i{
+  width: 30px;
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 5px;
+}
+.nav-responsive-button{
+  float: right;
+  font-size: 25px;
+  padding: 6px 20px;
+}
+.nav-responsive-button{
+  color: red;
+}
+@media only screen and (max-width: 600px){
+  .nav_ul{
+    display: none;
+  }
+  .nav_responsive-ul{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    margin-top: -1px;
+    height:37px ;
+    
+  }
+
+  .nav__li-conteiner{
+    position: relative;
+    top: -500px;
+    background-color: darkgoldenrod;
+    margin-left: -40px;
+    margin-bottom: -30px;
+  }
+  .nav{
+    height: 37px;
+    width: 100%;
+  }
+  .nav_responsive-li{
+    width: 100%;
+    padding: 9px 20px;
+  }
+  .nav_responsive-li i{
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color:#016 ;
+  }
+  .nav_responsive-li a {
+    color: black;
+    text-decoration: none;
+  }
+  .nav_responsive-ul:hover > .nav__li-conteiner{
+    top: -27px;
+  }
+  
+}
+.nav-responsive-button-container{
+position: absolute;
+width: 100%;
+font-size: 25px;
+background-color: green;
+z-index: 100;
+}
+
+
+
+
